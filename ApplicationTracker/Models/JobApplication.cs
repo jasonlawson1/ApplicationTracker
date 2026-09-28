@@ -6,7 +6,7 @@ public class JobApplication
     public string CompanyName { get; set; }
     public String Role { get; set; }
     public ApplicationStatus Status { get; set; } = ApplicationStatus.Applied
-    public DateTime DateApplied { get; set; } =  DateTime.Now;
+    public DateTime DateApplied { get; set; } =  DateTime.UtcNow;
     public string? Notes { get; set; }
 
     public enum ApplicationStatus
